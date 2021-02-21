@@ -1,6 +1,6 @@
 
 import java.util.Scanner;
-
+import javafx.application.Application;
 public class Main
 {
 	// 0
@@ -80,7 +80,17 @@ public class Main
 		System.out.print("Is true? " + res + "!");
 	}
 	//6 task
-	public static void main(String[] args){
+	int b = 3;
+	int c = squared(b);
+	System.out.print(c);
+	public static int squaed(int b) {
+			
+			return b * b;
+			
+	}
+	
+	
+	/*public static void main(String[] args){
 
 		Scanner points = new Scanner(System.in);
 		
@@ -91,9 +101,19 @@ public class Main
 		res = n / (w * h);
 		
 		System.out.print("How many walls can I paint? " + "You can paint " + res);
+		
 	}
 	//7 task
+		int b = 3;
+		public static int squaed(int b) {
+			return b * b;
+	  }
+	  System.out.print(c);*/
 	
+
+
+	
+
 	//8 task
 	
 	//9 task
