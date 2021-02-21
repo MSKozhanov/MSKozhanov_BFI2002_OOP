@@ -15,7 +15,7 @@ public class Main
 		Scanner minutes = new Scanner (System.in);
 		int m;
 		m = minutes.nextInt();
-		System.out.print("Seconds = " + m * 60)
+		System.out.print("Seconds = " + m * 60);
 	}
 	//2 task
 	
