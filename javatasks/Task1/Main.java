@@ -49,7 +49,7 @@ public class Main
 		System.out.print("sum = " + res);
 	}
 	//4 task
-	public static void main(String[] args){
+	public static void task4(String[] args){
 
 		Scanner points = new Scanner(System.in);
 		int digit;
@@ -64,7 +64,21 @@ public class Main
 		System.out.print("Division by 5: " + division5);
 	}
 	//5 task
-	
+	public static void main(String[] args){
+
+		Scanner points = new Scanner(System.in);
+		
+		boolean bool1, bool2,res;
+		bool1 = points.nextBool();
+		bool2 = points.nextBool();
+		if(bool1 == true) && (bool2 == true){
+			res = true;
+		}
+		else{
+			res = false;
+		}
+		System.out.print("Is true?" + res + "!");
+	}
 	//6 task
 	
 	//7 task
