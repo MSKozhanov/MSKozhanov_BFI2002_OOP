@@ -17,7 +17,7 @@ public class Main
 		m = minutes.nextInt();
 		res = m * 60;
 		System.out.print("Seconds = " + res);
-	}*/
+	}
 	//2 task
 	public static void task2(String[] args){
 
@@ -40,13 +40,14 @@ public class Main
 		Scanner points = new Scanner(System.in);
 		
 		
-		int victory,draw,defeat;
+		int victory,draw,defeat,res;
 		victory = points.nextInt();
 		draw = points.nextInt();
 		defeat = points.nextInt();
 		res = victory * 3 + draw * 1 + defeat * 0;
 		
 		System.out.print("sum = " + res);
+	}
 	//4 task
 	
 	//5 task
