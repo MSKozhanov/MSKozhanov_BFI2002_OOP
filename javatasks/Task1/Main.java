@@ -113,7 +113,7 @@ public class Main
 		}
 		
 	}
-	public static void main(String[] args){ //(prob = 0.2f prize = 50 pay = 9)
+	/*public static void main(String[] args){ //(prob = 0.2f prize = 50 pay = 9)
 		Scanner points = new Scanner(System.in);
 		int prize, pay;
 		float prob;
@@ -122,9 +122,20 @@ public class Main
 		pay = points.nextInt();
 		boolean profit = task8(prob,prize,pay);
 		System.out.println(profit);
-	}
+	}*/
 	//9 task
+	public static int task9(int frame, int minutes){
 	
-	
+		return minutes * 60 * frame;
+	}
+	public static void main(String[] args){
+		Scanner points = new Scanner(System.in);
+		int frame, minutes;
+		frame = points.nextInt();
+		minutes = points.nextInt();
+		int frames = task9(frame, minutes); 
+		System.out.println(frames);
+		
+	}
 	//10 task
 }
