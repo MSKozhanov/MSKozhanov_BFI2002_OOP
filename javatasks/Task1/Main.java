@@ -21,13 +21,17 @@ public class Main
 	//2 task
 	public static void main(String[] args){
 
+		
 		Scanner points = new Scanner(System.in);
+		
 		
 		int p2,p3, res;
 		p2 = points.nextInt();
 		p3 = points.nextInt();
-		res = (p2 * 2) + (p3 * 3);
+		res = p2 * 2 + p3 * 3;
+		
 		System.out.print("sum = " + res);
+	}
 	//3 task
 	
 	//4 task
