@@ -113,10 +113,12 @@ public class Main
 		}
 		
 	}
-	public static void main(String[] args){
-		float prob = 0.1f;
-		int prize = 50 ;
-		int pay = 9;
+	public static void main(String[] args){ //(prob = 0.2f prize = 50 pay = 9)
+		Scanner points = new Scanner(System.in);
+		int prob, prize, pay;
+		prob = points.nextFloat();
+		prize = points.nextInt();
+		pay = points.nextInt();
 		boolean profit = task8(prob,prize,pay);
 		System.out.println(profit);
 	}
