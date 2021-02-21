@@ -5,12 +5,12 @@ public class Main
 {
 	// 0
 	
-	/*public static void main(String[] args){
+	public static void task0(){
 
 		System.out.println("Hello, World");
-	}*/
+	}
 	//1 task
-	/*public static void main(String[] args){
+	public static void task1(String[] args){
 
 		Scanner minutes = new Scanner(System.in);
 		int m, res;
@@ -19,9 +19,9 @@ public class Main
 		System.out.print("Seconds = " + res);
 	}*/
 	//2 task
-	public static void main(String[] args){
+	public static void task2(String[] args){
 
-		
+		//task0();
 		Scanner points = new Scanner(System.in);
 		
 		
@@ -34,6 +34,19 @@ public class Main
 	}
 	//3 task
 	
+	public static void main(String[] args){
+
+		
+		Scanner points = new Scanner(System.in);
+		
+		
+		int victory,draw,defeat;
+		victory = points.nextInt();
+		draw = points.nextInt();
+		defeat = points.nextInt();
+		res = victory * 3 + draw * 1 + defeat * 0;
+		
+		System.out.print("sum = " + res);
 	//4 task
 	
 	//5 task
