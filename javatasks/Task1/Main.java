@@ -80,17 +80,9 @@ public class Main
 		System.out.print("Is true? " + res + "!");
 	}
 	//6 task
-	int b = 3;
-	int c = squared(b);
-	System.out.print(c);
-	public static int squaed(int b) {
-			
-			return b * b;
-			
-	}
 	
 	
-	/*public static void main(String[] args){
+	public static void task6(String[] args){
 
 		Scanner points = new Scanner(System.in);
 		
@@ -104,19 +96,32 @@ public class Main
 		
 	}
 	//7 task
-		int b = 3;
-		public static int squaed(int b) {
-			return b * b;
-	  }
-	  System.out.print(c);*/
-	
-
-
-	
+		
+	public static int squared(int b) {
+		return b * b;
+	}
 
 	//8 task
-	
+
+	public static boolean task8(float prob, int prize, int pay) {
+		
+		if (prob * prize > pay){
+			return true;	
+		}
+		else{
+			return false;
+		}
+		
+	}
+	public static void main(String[] args){
+		float prob = 0.1f;
+		int prize = 50 ;
+		int pay = 9;
+		boolean profit = task8(prob,prize,pay);
+		System.out.println(profit);
+	}
 	//9 task
+	
 	
 	//10 task
 }
