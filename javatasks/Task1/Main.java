@@ -64,7 +64,7 @@ public class Main
 		System.out.print("Division by 5: " + division5);
 	}
 	//5 task
-	public static void main(String[] args){
+	public static void task5(String[] args){
 
 		Scanner points = new Scanner(System.in);
 		
@@ -80,7 +80,15 @@ public class Main
 		System.out.print("Is true? " + res + "!");
 	}
 	//6 task
-	
+	public static void main(String[] args){
+
+		Scanner points = new Scanner(System.in);
+		
+		int n, w, h, res;
+		res = n / (w * h)
+		
+		System.out.print("How many walls can I paint? " + "You can paint " res + " walls!");
+	}
 	//7 task
 	
 	//8 task
