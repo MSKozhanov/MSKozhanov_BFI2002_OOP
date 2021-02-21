@@ -69,15 +69,15 @@ public class Main
 		Scanner points = new Scanner(System.in);
 		
 		boolean bool1, bool2,res;
-		bool1 = points.nextBool();
-		bool2 = points.nextBool();
-		if(bool1 == true) && (bool2 == true){
+		bool1 = points.nextBoolean();
+		bool2 = points.nextBoolean();
+		if(bool1 == true && bool2 == true){
 			res = true;
 		}
 		else{
 			res = false;
 		}
-		System.out.print("Is true?" + res + "!");
+		System.out.print("Is true? " + res + "!");
 	}
 	//6 task
 	
