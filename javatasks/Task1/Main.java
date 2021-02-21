@@ -34,7 +34,7 @@ public class Main
 	}
 	//3 task
 	
-	public static void main(String[] args){
+	public static void task3(String[] args){
 
 		
 		Scanner points = new Scanner(System.in);
@@ -49,7 +49,20 @@ public class Main
 		System.out.print("sum = " + res);
 	}
 	//4 task
-	
+	public static void main(String[] args){
+
+		Scanner points = new Scanner(System.in);
+		int digit;
+		boolean division5;
+		digit = points.nextInt();
+		
+		if(digit % 2 == 0){
+			division5 = true;
+		}else{
+			division5 = false;
+		}
+		System.out.print("Division = " + division5);
+	}
 	//5 task
 	
 	//6 task
