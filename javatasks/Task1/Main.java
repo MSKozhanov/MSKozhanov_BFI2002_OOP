@@ -115,7 +115,8 @@ public class Main
 	}
 	public static void main(String[] args){ //(prob = 0.2f prize = 50 pay = 9)
 		Scanner points = new Scanner(System.in);
-		int prob, prize, pay;
+		int prize, pay;
+		float prob;
 		prob = points.nextFloat();
 		prize = points.nextInt();
 		pay = points.nextInt();
