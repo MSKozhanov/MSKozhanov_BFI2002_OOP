@@ -85,9 +85,12 @@ public class Main
 		Scanner points = new Scanner(System.in);
 		
 		int n, w, h, res;
-		res = n / (w * h)
+		n = points.nextInt();
+		w = points.nextInt();
+		h = points.nextInt();
+		res = n / (w * h);
 		
-		System.out.print("How many walls can I paint? " + "You can paint " res + " walls!");
+		System.out.print("How many walls can I paint? " + "You can paint " + res);
 	}
 	//7 task
 	
