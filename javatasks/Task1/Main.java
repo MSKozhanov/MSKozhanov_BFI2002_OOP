@@ -61,7 +61,7 @@ public class Main
 		}else{
 			division5 = false;
 		}
-		System.out.print("Division = " + division5);
+		System.out.print("Division by 5: " + division5);
 	}
 	//5 task
 	
