@@ -60,7 +60,7 @@ public static double task3(int price, int percentage) {
 
 }
 
-public static void main(String[] args) {
+/*public static void main(String[] args) {
 	
 	Scanner sc = new Scanner(System.in);
 
@@ -70,9 +70,47 @@ public static void main(String[] args) {
 	percentage = sc.nextInt();
 	
 	System.out.println("New price: " + task3(price,percentage));
-}
+}*/
 //task4
 	
+public static int task4(int[] arr) {
+
+	int max = arr[0];
+	int min = arr[0];
+	
+	for(int i = 0; i < arr.length; i++) {
+		if(arr[i] > max) {
+			max = arr[i];
+		}
+		if(arr[i] < min) {
+			min = arr[i];
+		}
+	}
+	
+	return max - min;
+	
+	
+}
+public static void main(String[] args) {
+	
+	Scanner sc = new Scanner(System.in);
+	
+	int size;
+	
+	System.out.println("Enter size: ");
+	
+	size = sc.nextInt();
+	
+	int[] arr = new int[size];
+	
+	System.out.println("Enter element: ");
+	
+	for(int i = 0; i < size; i++) {
+		arr[i] = sc.nextInt();
+	}
+	
+	System.out.println("Result is: " + task4(arr));
+}
 //task5
 	
 //task6
