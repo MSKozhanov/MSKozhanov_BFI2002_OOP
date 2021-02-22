@@ -192,7 +192,7 @@ public static int task7(int[] arr) {
 	return max - min;
 }
 	
-public static void main(String[] args){
+/*public static void main(String[] args){
 		
 	Scanner sc = new Scanner(System.in);
 
@@ -205,9 +205,44 @@ public static void main(String[] args){
 	}
 		
 	System.out.println("Result is: " + task7(arr));
-}
+}*/
 //task8
+public static Boolean task8(String str) {
+	String res = "";
 	
+	int numO = 0, numX = 0;
+	
+	
+	for(int i = str.length() - 1; i >= 0; i--) {
+		if (str.charAt(i) == 'o' ) {
+			numO++; 
+		}
+		if (str.charAt(i) == 'x' ) {
+			numX++; 
+		}
+	}
+	
+	if(numO == numX ) {
+	return true;
+	}
+	else {
+		return false;
+	}
+	
+	
+}
+public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	
+	String str;
+	
+	System.out.println("Enter: ");
+	
+	str = sc.nextLine();
+	
+	System.out.println("Result is: " + task8(str));
+}
+
 //task9
 	
 //task10
