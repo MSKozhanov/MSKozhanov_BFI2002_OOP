@@ -113,27 +113,29 @@ public static int task4(int[] arr) {
 }*/
 //task5
 public static int task5(int[] arr) {
-	int res;
-	if(arr[0] == arr[1] == arr[2]) {
-		
-		 res = 3;
-		 return res;
+	if(arr[0] == arr[1] && arr[0] == arr[2] && arr[1] == arr[2]) {
+
+		 return 3;
 	}
 	else if(arr[0] == arr[1]){
-		 res = 2;
-		 return res;
+
+		 return 2;
 	}
 	else if(arr[0] == arr[2]){
-		 res = 2;
-		 return res;
+
+		 return 2;
 	}
 	else if(arr[1] == arr[2]){
-		res = 2;
-		return res
+
+		return 2;
+	}
+	else {
+		return 0;
+	
 	}
 }
 
-public static void main(String[] args) {
+/*public static void main(String[] args) {
 Scanner sc = new Scanner(System.in);
 	
 	
@@ -146,7 +148,7 @@ Scanner sc = new Scanner(System.in);
 	}
 	
 	System.out.println("Result is: " + task5(arr));
-}
+}*/
 //task6
 	
 //task7
