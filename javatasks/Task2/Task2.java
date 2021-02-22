@@ -1,7 +1,6 @@
 import java.util.Scanner;
 import javafx.application.Application;
-public class Main
-{
+public class Task2{
 
 //task1
 public static int task1(int length, int nomberhouse) {
@@ -14,9 +13,9 @@ public static int task1(int length, int nomberhouse) {
 public static void main(String[] args){
 	Scanner points = new Scanner(System.in);
 	int length, nomberhouse;
+	nomberhouse= points.nextInt();
 	length = points.nextInt();
-	nomberhouse = points.nextInt();
-	int find = task1(lenght, nomberhouse); 
+	int find = task1(length, nomberhouse); 
 	System.out.println(find);
 }
 	
