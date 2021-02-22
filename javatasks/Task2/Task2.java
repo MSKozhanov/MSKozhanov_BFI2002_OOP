@@ -150,7 +150,7 @@ Scanner sc = new Scanner(System.in);
 	System.out.println("The number of identical: " + task5(arr));
 }*/
 //task6
-public static String task6(Strting str) {
+public static String task6(String str) {
 	
 	String res = "";
 	
