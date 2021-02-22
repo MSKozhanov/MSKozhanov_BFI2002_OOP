@@ -138,7 +138,7 @@ public class Main
 		
 	}*/
 	//10 task
-}	
+	
 	public static int task10(int digit, int division){
 
 		return (digit - ((digit/division) * division));
@@ -152,3 +152,4 @@ public class Main
 		int res = task10(digit, division); 
 		System.out.println(res);
 	}
+}
