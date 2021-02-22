@@ -128,7 +128,7 @@ public class Main
 	
 		return minutes * 60 * frame;
 	}
-	public static void main(String[] args){
+	/*public static void main(String[] args){
 		Scanner points = new Scanner(System.in);
 		int frame, minutes;
 		frame = points.nextInt();
@@ -136,6 +136,19 @@ public class Main
 		int frames = task9(frame, minutes); 
 		System.out.println(frames);
 		
-	}
+	}*/
 	//10 task
-}
+}	
+	public static int task10(int digit, int division){
+
+		return (digit - ((digit/division) * division));
+	}
+	
+	public static void main(String[] args){
+		Scanner points = new Scanner(System.in);
+		int digit, division;
+		digit = points.nextInt();
+		division = points.nextInt();
+		int res = task10(digit, division); 
+		System.out.println(res);
+	}
