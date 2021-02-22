@@ -4,6 +4,13 @@ public class Main
 {
 
 //task1
+public static int task1(int length, int nomberhouse) {
+	int nomber, find;
+	nomber = length * 2;
+	find = nomber - nomberhouse + 1;
+	return find;
+			
+}
 	
 //task2
 	
