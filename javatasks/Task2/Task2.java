@@ -53,25 +53,23 @@ public static String task2(String str) {
 
 //task3
 	
-public static float task3(int price, int percentage) {
-	float res;
-	res = price - price*(percentage / 100);
+public static double task3(int price, int percentage) {
+	double res;
+	res = (price - price*(percentage / 100));
 	return res;
-	
 
-	
 }
 
 public static void main(String[] args) {
 	
 	Scanner sc = new Scanner(System.in);
-	float res;
+
 	int price, percentage;
 	
 	price = sc.nextInt();
 	percentage = sc.nextInt();
 	
-	System.out.println("New price" + task3(price,percentage));
+	System.out.println("New price " + task3(price,percentage));
 }
 //task4
 	
