@@ -55,7 +55,7 @@ public static String task2(String str) {
 	
 public static double task3(int price, int percentage) {
 	double res;
-	res = (price - price*(percentage / 100));
+	res = price * (100 - percentage)/100;
 	return res;
 
 }
@@ -69,7 +69,7 @@ public static void main(String[] args) {
 	price = sc.nextInt();
 	percentage = sc.nextInt();
 	
-	System.out.println("New price " + task3(price,percentage));
+	System.out.println("New price: " + task3(price,percentage));
 }
 //task4
 	
