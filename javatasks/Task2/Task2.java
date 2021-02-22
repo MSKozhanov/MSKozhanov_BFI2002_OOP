@@ -135,7 +135,7 @@ public static int task5(int[] arr) {
 	}
 }
 
-public static void main(String[] args) {
+/*public static void main(String[] args) {
 Scanner sc = new Scanner(System.in);
 	
 	
@@ -148,9 +148,32 @@ Scanner sc = new Scanner(System.in);
 	}
 	
 	System.out.println("The number of identical: " + task5(arr));
-}
+}*/
 //task6
+public static String task6(Strting str) {
 	
+	String res = "";
+	
+	for(int i = str.length() - 1; i >= 0; i--) {
+		res += str.charAt(i);
+	}
+	
+	return res;
+}
+
+public static void main(String[] args) {
+	
+	Scanner sc = new Scanner(System.in);
+	
+	String str;
+	
+	System.out.println("Enter: ");
+	
+	str = sc.nextLine();
+	
+	System.out.println("Result is: " + task6(str));
+}
+
 //task7
 	
 //task8
