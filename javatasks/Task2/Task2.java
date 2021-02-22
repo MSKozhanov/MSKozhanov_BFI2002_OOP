@@ -91,7 +91,7 @@ public static int task4(int[] arr) {
 	
 	
 }
-public static void main(String[] args) {
+/*public static void main(String[] args) {
 	
 	Scanner sc = new Scanner(System.in);
 	
@@ -110,9 +110,43 @@ public static void main(String[] args) {
 	}
 	
 	System.out.println("Result is: " + task4(arr));
-}
+}*/
 //task5
+public static int task5(int[] arr) {
+	int res;
+	if(arr[0] == arr[1] == arr[2]) {
+		
+		 res = 3;
+		 return res;
+	}
+	else if(arr[0] == arr[1]){
+		 res = 2;
+		 return res;
+	}
+	else if(arr[0] == arr[2]){
+		 res = 2;
+		 return res;
+	}
+	else if(arr[1] == arr[2]){
+		res = 2;
+		return res
+	}
+}
+
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
 	
+	
+	int[] arr = new int[3];
+	
+	System.out.println("Enter element: ");
+	
+	for(int i = 0; i < 3; i++) {
+		arr[i] = sc.nextInt();
+	}
+	
+	System.out.println("Result is: " + task5(arr));
+}
 //task6
 	
 //task7
