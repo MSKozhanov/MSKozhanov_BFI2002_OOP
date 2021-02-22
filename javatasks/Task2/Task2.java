@@ -22,8 +22,7 @@ public static int task1(int length, int nomberhouse) {
 //task2
 public static String task2(String str) {
 	
-	String res = "";
-	String s1 ="", s2 = "";
+	String res = "", s1 = "", s2 = "";
 	
 	for(int i = 0; i < str.indexOf(' '); i++) {
 		s1 += str.charAt(i);
@@ -39,7 +38,7 @@ public static String task2(String str) {
 	
 }
 
-public static void main(String[] args) {
+/*public static void main(String[] args) {
 	
 	Scanner sc = new Scanner(System.in);
 	
@@ -50,9 +49,30 @@ public static void main(String[] args) {
 	str = sc.nextLine();
 	
 	System.out.println("Result is: " + task2(str));
-}
+}*/
+
 //task3
 	
+public static float task3(int price, int percentage) {
+	float res;
+	res = price - price*(percentage / 100);
+	return res;
+	
+
+	
+}
+
+public static void main(String[] args) {
+	
+	Scanner sc = new Scanner(System.in);
+	float res;
+	int price, percentage;
+	
+	price = sc.nextInt();
+	percentage = sc.nextInt();
+	
+	System.out.println("New price" + task3(price,percentage));
+}
 //task4
 	
 //task5
