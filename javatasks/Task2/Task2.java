@@ -161,7 +161,7 @@ public static String task6(String str) {
 	return res;
 }
 
-public static void main(String[] args) {
+/*public static void main(String[] args) {
 	
 	Scanner sc = new Scanner(System.in);
 	
@@ -172,10 +172,40 @@ public static void main(String[] args) {
 	str = sc.nextLine();
 	
 	System.out.println("Result is: " + task6(str));
-}
+}*/
 
 //task7
+public static int task7(int[] arr) {
+
+	int max = arr[0];
+	int min = arr[0];
 	
+	for(int i = 0; i < arr.length; i++) {
+		if(arr[i] > max) {
+			max = arr[i];
+		}
+		if(arr[i] < min) {
+			min = arr[i];
+		}
+	}
+	
+	return max - min;
+}
+	
+public static void main(String[] args){
+		
+	Scanner sc = new Scanner(System.in);
+
+	int[] arr = new int[3];
+		
+	System.out.println("Enter pay: ");
+		
+	for(int i = 0; i < 3; i++) {
+			arr[i] = sc.nextInt();
+	}
+		
+	System.out.println("Result is: " + task7(arr));
+}
 //task8
 	
 //task9
