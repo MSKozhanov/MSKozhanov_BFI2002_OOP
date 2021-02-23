@@ -246,6 +246,8 @@ public static Boolean task8(String str) {
 //task9
 public static String task9(String str) {
 	
+	
+	
 	String find = "";
 	
 	String[] subStr;
@@ -255,19 +257,26 @@ public static String task9(String str) {
     subStr = str.split(separ); 
     
     for(int i = 0; i < subStr.length; i++) { 
-       if(subStr[i] == "bomb" | subStr[i] == "Bomb") {
+    	
+    	
+       if(subStr[i].equals("bomb")  ) {   
     	   find = "DUCK!";
        }
        
     }
     if (find == "DUCK!") {
-    	return "DUCK!";
+    	return find;
     }
+    else {
+    	return "Relax, there's no bomb.";
+    }
+    
 	
 }
 
 public static void main(String[] args) {
-Scanner sc = new Scanner(System.in);
+	
+	Scanner sc = new Scanner(System.in);
 	
 	String str;
 	
@@ -275,7 +284,7 @@ Scanner sc = new Scanner(System.in);
 	
 	str = sc.nextLine();
 	
-	System.out.println("Result is: " + task9(str));
+	System.out.println("Result is: " + task9(str.toLowerCase())); 
 }
 //task10
 
