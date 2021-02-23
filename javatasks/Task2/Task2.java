@@ -231,7 +231,7 @@ public static Boolean task8(String str) {
 	
 	
 }
-public static void main(String[] args) {
+/*public static void main(String[] args) {
 	Scanner sc = new Scanner(System.in);
 	
 	String str;
@@ -241,10 +241,42 @@ public static void main(String[] args) {
 	str = sc.nextLine();
 	
 	System.out.println("Result is: " + task8(str));
-}
+}*/
 
 //task9
+public static String task9(String str) {
 	
+	String find = "";
+	
+	String[] subStr;
+	
+    String separ = " "; 
+    
+    subStr = str.split(separ); 
+    
+    for(int i = 0; i < subStr.length; i++) { 
+       if(subStr[i] == "bomb" | subStr[i] == "Bomb") {
+    	   find = "DUCK!";
+       }
+       
+    }
+    if (find == "DUCK!") {
+    	return "DUCK!";
+    }
+	
+}
+
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+	
+	String str;
+	
+	System.out.println("Enter: ");
+	
+	str = sc.nextLine();
+	
+	System.out.println("Result is: " + task9(str));
+}
 //task10
 
 }
