@@ -246,8 +246,6 @@ public static Boolean task8(String str) {
 //task9
 public static String task9(String str) {
 	
-	
-	
 	String find = "";
 	
 	String[] subStr;
@@ -274,7 +272,7 @@ public static String task9(String str) {
 	
 }
 
-public static void main(String[] args) {
+/*public static void main(String[] args) {
 	
 	Scanner sc = new Scanner(System.in);
 	
@@ -285,7 +283,23 @@ public static void main(String[] args) {
 	str = sc.nextLine();
 	
 	System.out.println("Result is: " + task9(str.toLowerCase())); 
-}
+}*/
 //task10
-
+public static String task10(String str1, String str2) {
+	
+}
+	
+public static void main(String[] args) {
+	
+	Scanner sc = new Scnner(System.in);
+	
+	String str1, str2;
+	
+	System.out.println("Enter: ");
+	
+	str1 = sc.nextLine();
+	str2 = sc.nextLine();
+	
+	System.out.println("Result is: " + task10(str1, str2));
+}
 }
