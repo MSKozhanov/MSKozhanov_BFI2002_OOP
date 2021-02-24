@@ -289,9 +289,11 @@ public static Boolean task10(String str1, String str2) {
 	
 	int sum1 = 0;
 	int sum2 = 0;
+	
 	for(int i = 0; i< str1.length(); i++) {
 		sum1 += (int)str1.charAt(i);
 	}
+	
 	for(int i = 0; i< str2.length(); i++) {
 		sum2 += (int)str2.charAt(i);
 	}
@@ -300,7 +302,7 @@ public static Boolean task10(String str1, String str2) {
 		return true;
 	}
 	else {
-		return true;
+		return false;
 	}
 }
 	
