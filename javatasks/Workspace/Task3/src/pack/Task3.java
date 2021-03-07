@@ -71,7 +71,7 @@ public class Task3{
 		return arr;
 	}
 	
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -84,9 +84,45 @@ public class Task3{
 		
 		
 		
-	}
+	}*/
 	//task3
+	public static String task3(String[] arr) {
+		
+		String res;
+		
+	char a = arr[0].charAt(0);
+	char b = arr[1].charAt(0);
 	
+	if(a == b) {
+		res = "Tie";
+	} else if(a == 'r' && b == 's' || a == 's' && b == 'p' || a == 'p' &&  b == 'r') {
+		res = "The First player win";
+	} else {
+		res = "The Second player win";
+	}
+		
+		return res;
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("First player/Second player Enter 'rock' or 'paper' or 'scissors' ");
+		
+		String[] arr = new String[2]; 
+		
+		
+		
+		for(int i = 0; i < 2; i++) {
+			
+			arr[i] = sc.nextLine();
+			arr[i].toLowerCase();
+		}
+		System.out.println("Result: " + task3(arr));
+	}
 	//task4
 	
 	//task5
