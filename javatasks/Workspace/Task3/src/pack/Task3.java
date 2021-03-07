@@ -106,7 +106,7 @@ public class Task3{
 	}
 	
 	
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -122,9 +122,49 @@ public class Task3{
 			arr[i].toLowerCase();
 		}
 		System.out.println("Result: " + task3(arr));
-	}
+	}*/
 	//task4
+	public static int task4(int[] arr){
+		
+		
+		int sumEven = 0;
+		int sumUnEven = 0;
+		for(int i = 0; i < arr.length; i++) {
+			if (arr[i] % 2 == 0)
+				sumEven += arr[i];
+			else
+				sumUnEven += arr[i];
+		}
+		
+		if(sumEven > sumUnEven) {
+			return (sumEven - sumUnEven);
+		}
+			
+		else
+			return (sumUnEven - sumEven);
+		
+		
+	}
 	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int size;
+		
+		System.out.println("Enter size: ");
+		
+		size = sc.nextInt();
+		
+		int[] arr = new int[size];
+		
+		System.out.println("Enter element: ");
+		
+		for(int i = 0; i < size; i++) {
+			arr[i] = sc.nextInt();
+		}
+		
+		System.out.println("Result is: " + task4(arr));
+	}
 	//task5
 	
 	//task6
