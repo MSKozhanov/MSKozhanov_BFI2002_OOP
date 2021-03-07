@@ -146,7 +146,7 @@ public class Task3{
 		
 	}
 	
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
 		int size;
@@ -164,9 +164,43 @@ public class Task3{
 		}
 		
 		System.out.println("Result is: " + task4(arr));
-	}
+	}*/
 	//task5
+	public static String task5(String str) {
+		
+		String result = ""; 
+		
+		for (int i = 0; i < str.length(); i++) {
+			String ss = "";
+			
+			ss += str.charAt(i);
+			
+			 if((int)str.charAt(i) >= 65 && (int)str.charAt(i)<= 90) {
+				 ss = ss.toLowerCase();
+						 
+			 }
+			 else {
+				 ss = ss.toUpperCase();
+			 }
+				 
+			 result += ss;
+	 
+		}
+		return result;
+		
+	}
 	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter: ");
+		
+		String str = sc.nextLine();
+		
+		System.out.println("Result: " + task5(str));
+		
+	}
 	//task6
 	
 	//task7
