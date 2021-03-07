@@ -1,4 +1,5 @@
 package pack;
+import java.util.Arrays;
 import java.util.Scanner;
 
 	
@@ -63,6 +64,10 @@ public class Task3{
 		
 		arr[1] = Math.sqrt(arr[0] * arr[0] - a * a);
 		
+		arr[1] = Math.round(arr[1] * 100);
+		
+		arr[1] /= 100;
+		
 		return arr;
 	}
 	
@@ -72,9 +77,10 @@ public class Task3{
 		
 		System.out.println("Enter a: ");
 		
-		double a = sc.nextDouble();
+		int a = sc.nextInt();
 		
-		System.out.println("Result:" + task2(a));
+		System.out.println("Result:" + (Arrays.toString(task2(a))));
+		
 		
 		
 		
