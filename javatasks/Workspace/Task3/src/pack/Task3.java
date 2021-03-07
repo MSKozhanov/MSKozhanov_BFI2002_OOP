@@ -55,16 +55,29 @@ public class Task3{
 	
 	//task2
 	
-	public static void task2() {
+	public static double[] task2(double a) {
 		
+		double [] arr = new double[2];
+		
+		arr[0] = a * 2;
+		
+		arr[1] = Math.sqrt(arr[0] * arr[0] - a * a);
+		
+		return arr;
 	}
 	
 	public static void main(String[] args) {
+		
 		Scanner sc = new Scanner(System.in);
-		int n = 0
-		int [] arr = new int[];
-		for(int i = 0; n < 3; i++ )
-			arr[i] =  sc.nextInt();
+		
+		System.out.println("Enter a: ");
+		
+		double a = sc.nextDouble();
+		
+		System.out.println("Result:" + task2(a));
+		
+		
+		
 	}
 	//task3
 	
