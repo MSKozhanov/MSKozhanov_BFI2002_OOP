@@ -190,7 +190,7 @@ public class Task3{
 		
 	}
 	
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -200,9 +200,48 @@ public class Task3{
 		
 		System.out.println("Result: " + task5(str));
 		
-	}
-	//task6
+	}*/
 	
+	//task6
+public static String task6(String str) {
+		
+		String res = "";
+		
+		res += str;
+		
+	String ss = "";
+	
+	ss += str.charAt(str.length() - 1);
+	
+	if(ss.matches("^(?i:[aeiouy]).*")) {
+		//^ начало строки
+		//?i включает CASE_INSENSITIVE для этой группы, чтобы не перечислять повторно заглавные буквы
+		//[aeiouy] все гласные. 
+		//.*дальше сколько угодно (хоть ноль) любых символов, кроме конца строки
+		res += "-nator ";
+	} else {
+		res += "inator ";
+	}
+	
+	res += str.length();
+	res += "000";
+	
+	return res;
+		
+	}
+
+public static void main(String[] args) {
+	
+	Scanner sc = new Scanner(System.in);
+	
+	System.out.println("Enter: ");
+	
+	String str = sc.nextLine();
+	
+	System.out.println("Result: " + task6(str));
+
+
+}
 	//task7
 	
 	//task8
