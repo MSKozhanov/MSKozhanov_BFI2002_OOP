@@ -64,7 +64,7 @@ public class Task3{
 		
 		arr[1] = Math.sqrt(arr[0] * arr[0] - a * a);
 		
-		arr[1] = Math.round(arr[1] * 100);
+		arr[1] = Math.floor(arr[1] * 100);
 		
 		arr[1] /= 100;
 		
