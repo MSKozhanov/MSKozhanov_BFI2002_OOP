@@ -281,7 +281,7 @@ public static Boolean task7(int k, int p, int z) {
 
 public static double task8(double Liters, double Fuel_Consumption, double Passangers, Boolean Air_conditioning) {
 	
-	double res;
+	/*double res;
 	double a = (Liters * 100 / Fuel_Consumption);
 	double b = (1 - Passangers * 0.05);
 	
@@ -294,10 +294,20 @@ public static double task8(double Liters, double Fuel_Consumption, double Passan
 		res = (a  * b);
 	}
 	
-	return res;
+	return res;*/
+	
+	
 	//70.0, 7.0, 0, false
 	//36.1, 8.6, 3, true
 	//55.5, 5.5, 5, false
+	
+	Fuel_Consumption = Fuel_Consumption + Fuel_Consumption*(0.05 * Passangers);
+	
+	if(Air_conditioning == true) {
+		return Liters / ((Fuel_Consumption * 1.1)/100);
+	} else {
+		return Liters / (Fuel_Consumption / 100);
+	}
 	
 }
 public static void main(String[] args) {
@@ -309,7 +319,7 @@ public static void main(String[] args) {
 	System.out.println("Enter Fuel Consumption:");
 	double Fuel_Consumption = sc.nextDouble();
 	System.out.println("Enter Passangers:");
-	double Passangers = sc.nextDouble();
+	int Passangers = sc.nextInt();
 	System.out.println("Enter  air-conditioning:");
 	Boolean Air_conditioning = sc.nextBoolean();
 	
