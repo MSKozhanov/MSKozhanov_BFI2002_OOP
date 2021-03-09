@@ -18,7 +18,7 @@ public class Task4 {
 		
 	}
 	
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		String res = "";
 		String now = "";
 		
@@ -42,8 +42,38 @@ public class Task4 {
 		
 		
 		System.out.println("Result is: " + task1(res));
-	}
+	}*/
 //TASK2
+	public static Boolean task2(int[] arr) {
+		Arrays.sort(arr);
+		
+		for(int i = 0; i < arr.length; i++) {
+			if(arr[i] != i + arr[0]) {
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int size;
+		
+		System.out.println("Enter size: ");
+		
+		size = sc.nextInt();
+		
+		int[] arr = new int[size];
+		
+		System.out.println("Enter element: ");
+		
+		for(int i = 0; i < size; i++) {
+			arr[i] = sc.nextInt();
+		}
+		
+		System.out.println("Result is: " + task2(arr));
+	}
 //TASK3
 //TASK4
 //TASK5
