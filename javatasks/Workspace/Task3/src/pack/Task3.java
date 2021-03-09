@@ -230,7 +230,7 @@ public static String task6(String str) {
 		
 	}
 
-public static void main(String[] args) {
+/*public static void main(String[] args) {
 	
 	Scanner sc = new Scanner(System.in);
 	
@@ -241,8 +241,40 @@ public static void main(String[] args) {
 	System.out.println("Result: " + task6(str));
 
 
-}
+}*/
 	//task7
+public static Boolean task7(int k, int p, int z) {
+	
+	//if((arr[0]*arr[2]<=(arr[3]*arr[4])||(arr[0]*arr[1])<=(arr[3]*arr[4])) {
+	
+	if(( k)<=(z)||( p)<=(z)) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+	
+public static void main(String[] args) {
+	
+	Scanner sc = new Scanner(System.in);
+	
+	
+	System.out.println("Enter: Height/Width/Depth/Hole width/Hole height ");
+	
+	int[] arr = new int[5]; 
+	
+	for(int i = 0; i < 5; i++) {
+		
+		arr[i] = sc.nextInt();
+		
+	}
+	int k = arr[0] * arr[2];
+	int p = arr[0] * arr[1];
+	int z = arr[3]*arr[4];
+	System.out.println("Result: " + task7(k,p,z));
+	
+	}
 	
 	//task8
 	
