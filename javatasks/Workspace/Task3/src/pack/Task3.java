@@ -310,7 +310,7 @@ public static double task8(double Liters, double Fuel_Consumption, double Passan
 	}
 	
 }
-public static void main(String[] args) {
+/*public static void main(String[] args) {
 	
 	Scanner sc = new Scanner(System.in);
 	
@@ -325,10 +325,70 @@ public static void main(String[] args) {
 	
 	System.out.println("Result: " + task8(Liters,Fuel_Consumption,Passangers,Air_conditioning));
 	
-}
+}*/
 	//task9
+public static double task9(double[] arr) {
+	double sum = 0;
+	
+	for(int i = 0; i < arr.length; i++) {
+		sum += arr[i];
+	}
+	return sum / arr.length;
+	
+}
+/*public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	
+	int size;
+	
+	System.out.println("Enter size: ");
+	
+	size = sc.nextInt();
+	
+	double[] arr = new double[size];
+	
+	System.out.println("Enter element: ");
+	
+	for(int i = 0; i < size; i++) {
+		arr[i] = sc.nextInt();
+	}
+	
+	System.out.println("Result is: " + task9(arr));
+	
+}*/
+
 	
 	//task10
+public static Boolean task10(double Number) {
+	 int Sum = 0;
+	 
+	 double Num = Number;
+	 
+	while(Number != 0) {
+		Sum += Number % 10;
+		Number /= 10;
+	}
+	
+	if (Num % 2 == Sum % 2) {
+		return true;
+	}
+	
+	else {
+		return false;
+	}
+}
+
+public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	
+	int Number ;
+	
+	System.out.println("Enter Number: ");
+	
+	Number = sc.nextInt();
+	
+	System.out.println("Result is: " + task10(Number));
+}
 	
 }
 
