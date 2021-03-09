@@ -255,7 +255,7 @@ public static Boolean task7(int k, int p, int z) {
 	}
 }
 	
-public static void main(String[] args) {
+/*public static void main(String[] args) {
 	
 	Scanner sc = new Scanner(System.in);
 	
@@ -274,10 +274,48 @@ public static void main(String[] args) {
 	int z = arr[3]*arr[4];
 	System.out.println("Result: " + task7(k,p,z));
 	
-	}
+	}*/
 	
 	//task8
+
+
+public static double task8(double Liters, double Fuel_Consumption, double Passangers, Boolean Air_conditioning) {
 	
+	double res;
+	double a = (Liters * 100 / Fuel_Consumption);
+	double b = (1 - Passangers * 0.05);
+	
+	if (Air_conditioning == true) {
+		
+		
+		res = (a  * b) *0.9;
+	}
+	else {
+		res = (a  * b);
+	}
+	
+	return res;
+	//70.0, 7.0, 0, false
+	//36.1, 8.6, 3, true
+	//55.5, 5.5, 5, false
+	
+}
+public static void main(String[] args) {
+	
+	Scanner sc = new Scanner(System.in);
+	
+	System.out.println("Enter Liters:");
+	double Liters = sc.nextDouble();
+	System.out.println("Enter Fuel Consumption:");
+	double Fuel_Consumption = sc.nextDouble();
+	System.out.println("Enter Passangers:");
+	double Passangers = sc.nextDouble();
+	System.out.println("Enter  air-conditioning:");
+	Boolean Air_conditioning = sc.nextBoolean();
+	
+	System.out.println("Result: " + task8(Liters,Fuel_Consumption,Passangers,Air_conditioning));
+	
+}
 	//task9
 	
 	//task10
