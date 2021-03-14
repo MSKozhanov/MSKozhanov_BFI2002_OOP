@@ -96,7 +96,7 @@ public static String task3(String str) {
 		return res;
 		
 }
-public static void main(String[] args) {
+/*public static void main(String[] args) {
 	
 	Scanner sc = new Scanner(System.in);
 	
@@ -107,8 +107,37 @@ public static void main(String[] args) {
 	str = sc.nextLine();
 	
 	System.out.println("Result is: " + task3(str));
-}
+}*/
 //TASK4
+public static StringBuffer task4(StringBuffer sb) {
+	
+	int a = sb.length() - 1;
+	
+	for(int i = sb.length()-1; i>=0; i--) {
+		if(sb.charAt(i) != '?' && sb.charAt(i) != '!') {
+			sb.delete(i+1,a);
+			break;
+		}
+	
+	
+		
+		
+	}
+	return sb;
+}
+public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	
+	String str = "";
+	
+	System.out.println("Enter string: ");
+	
+	str = sc.nextLine();
+	
+	StringBuffer sb = new StringBuffer(str);
+	
+	System.out.println("Result is: " + task4(sb));
+}
 //TASK5
 //TASK6
 //TASK7
