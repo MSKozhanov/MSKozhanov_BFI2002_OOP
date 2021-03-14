@@ -55,7 +55,7 @@ public class Task4 {
 		return true;
 	}
 	
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
 		int size;
@@ -73,8 +73,31 @@ public class Task4 {
 		}
 		
 		System.out.println("Result is: " + task2(arr));
-	}
+	}*/
 //TASK3
+	
+	//if str.charAt[i] != 0 
+	//		res += str.char[i-1]
+public static String task3(String str) {
+		String res = "";
+		for (int i = 0; i < str.length(); i++){
+			if (i % 2 != 0 ) {
+				res += str.charAt(i);
+				res += str.charAt(i-1);
+			}
+			
+		}
+		
+		return res;
+		
+}
+public static void main(String[] args) {	
+	Scanner sc = new Scanner(System.in);
+	String str = "";
+	System.out.println("Enter string: ");
+	str = sc.nextLine();
+	System.out.println("Result is: " + task3(str));
+}
 //TASK4
 //TASK5
 //TASK6
