@@ -206,11 +206,26 @@ Scanner sc = new Scanner(System.in);
 public static int task7( String str) {
 	String ss = "";
 	
+	int x1 = Integer.valueOf(str);
+	
+	if(str.length() >= 3) {
+		
+		int s = 1;
+		
+		for(int i = 1; i < str.length(); i++) {
+			s *= 10;
+		}
+		
+		x1 = x1 % s;
+		
+	}
+	
+	str = String.valueOf(x1);
+	
 	for(int i = str.length() - 1; i >= 0; i--) {
 		ss += str.charAt(i);
 	}
 	
-	int x1 = Integer.valueOf(str);
 	int x2 = Integer.valueOf(ss);
 	
 	x1 = x1 - x2;
