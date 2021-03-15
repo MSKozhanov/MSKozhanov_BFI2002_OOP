@@ -147,7 +147,7 @@ public static String task4(String str) {
 		if(str.charAt(i) != 'x') {
 			res += str.charAt(i);
 		} else {
-			if(str.charAt(i-1) == ' ' && str.charAt(i+1) == ' ' && i != 0 && i != str.length() - 1) {
+			if(i != 0 && i != str.length() - 1 && str.charAt(i-1) == ' ' && str.charAt(i+1) == ' '|| (i == 0 && i != str.length()-1) && str.charAt(i +1) == ' '  || (i == str.length() - 1 && i != 0 && str.charAt(i-1) == ' ') || (str.length() == 1 )) {
 				res += "ecks";
 			} else if(i != 0 && str.charAt(i-1) == ' '){
 				res += "z";
