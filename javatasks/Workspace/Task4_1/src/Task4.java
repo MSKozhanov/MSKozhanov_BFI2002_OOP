@@ -183,7 +183,7 @@ public static int task6( int[] arr) {
 	}
 	return max;
 }
-public static void main(String[] args) {
+/*public static void main(String[] args) {
 Scanner sc = new Scanner(System.in);
 	
 	int size;
@@ -201,8 +201,36 @@ Scanner sc = new Scanner(System.in);
 	}
 	
 	System.out.println("Result is: " + task6(arr));
-}
+}*/
 //TASK7
+public static int task7( String str) {
+	String ss = "";
+	
+	for(int i = str.length() - 1; i >= 0; i--) {
+		ss += str.charAt(i);
+	}
+	
+	int x1 = Integer.valueOf(str);
+	int x2 = Integer.valueOf(ss);
+	
+	x1 = x1 - x2;
+	
+	if(x1 < 0) {
+		return 0;
+	} else {
+		return x1;
+	}
+}
+
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+
+System.out.println("Enter : ");
+
+String str = sc.nextLine();
+
+System.out.println("Result is: " + task7(str));
+}
 //TASK8
 //TASK9
 //TASK10
