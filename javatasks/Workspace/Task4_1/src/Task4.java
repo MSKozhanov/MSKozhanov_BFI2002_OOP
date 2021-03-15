@@ -125,7 +125,7 @@ public static StringBuffer task4(StringBuffer sb) {
 	}
 	return sb;
 }
-public static void main(String[] args) {
+/*public static void main(String[] args) {
 	Scanner sc = new Scanner(System.in);
 	
 	String str = "";
@@ -137,8 +137,41 @@ public static void main(String[] args) {
 	StringBuffer sb = new StringBuffer(str);
 	
 	System.out.println("Result is: " + task4(sb));
-}
+}*/
 //TASK5
+
+public static String task4(String str) {
+	String res = "";
+	
+	for(int i = 0; i < str.length(); i++) {
+		if(str.charAt(i) != 'x') {
+			res += str.charAt(i);
+		} else {
+			if(str.charAt(i-1) == ' ' && str.charAt(i+1) == ' ' && i != 0 && i != str.length() - 1) {
+				res += "ecks";
+			} else if(i != 0 && str.charAt(i-1) == ' '){
+				res += "z";
+			} else {
+				res += "cks";
+			}
+		}
+	}
+	return res;
+	
+}
+
+public static void main(String[] args) {
+	
+	Scanner sc = new Scanner(System.in);
+	
+	String str = "";
+	
+	System.out.println("Enter string: ");
+	
+	str = sc.nextLine();
+	
+	System.out.println("Result is: " + task4(str));
+}
 //TASK6
 //TASK7
 //TASK8
