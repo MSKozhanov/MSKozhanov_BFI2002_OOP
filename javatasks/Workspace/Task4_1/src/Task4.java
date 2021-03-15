@@ -237,7 +237,7 @@ public static int task7( String str) {
 	}
 }
 
-public static void main(String[] args) {
+/*public static void main(String[] args) {
 Scanner sc = new Scanner(System.in);
 
 System.out.println("Enter : ");
@@ -245,8 +245,51 @@ System.out.println("Enter : ");
 String str = sc.nextLine();
 
 System.out.println("Result is: " + task7(str));
-}
+}*/
+
 //TASK8
+public static String task8(String str) {
+	String b = "aoyuei";
+	int[] rr = new int[] {0, 0, 0, 0, 0, 0};
+	
+	for(int i = 0; i < str.length(); i++) {
+		
+		String ss = "";
+		ss += str.charAt(i);
+		
+		if(ss.matches("^(?i:[aeiouy]).*") && i < str.length() - 1 && str.charAt(i + 1) == ' ' || ss.matches("^(?i:[aeiouy]).*") && i == str.length() - 1) {
+			rr[b.indexOf(str.charAt(i))] ++;
+		}
+	}
+	String res = "";
+	
+	System.out.println(Arrays.toString(rr));
+	
+	char ch = '0';
+	int max = 0;
+	
+	for(int i = 0; i < 6; i++) {
+		if(rr[i] > max) {
+			ch = b.charAt(i);
+			max = rr[i];
+		}
+	}
+	
+	res += ch;
+	
+	return res;
+}
+
+public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+
+	System.out.println("Enter string : ");
+
+	String str = sc.nextLine();
+
+	System.out.println("Result is: " + task8(str));
+	
+}
 //TASK9
 //TASK10
 	
