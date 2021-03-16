@@ -280,7 +280,7 @@ public static String task8(String str) {
 	return res;
 }
 
-public static void main(String[] args) {
+/*public static void main(String[] args) {
 	Scanner sc = new Scanner(System.in);
 
 	System.out.println("Enter string : ");
@@ -289,8 +289,98 @@ public static void main(String[] args) {
 
 	System.out.println("Result is: " + task8(str));
 	
-}
+}*/
 //TASK9
-//TASK10
+public static String task9(String str1, String str2) {
+	int len;
 	
+	String res = "";
+	
+	if(str1.length() > str2.length()) {
+		len = str1.length();
+		String vv = "";
+		
+		 
+		for(int i = 0; i < str1.length() - str2.length(); i++) {
+			vv += "0";
+		}
+		
+		vv += str2;
+		
+		str2 = vv;
+		
+	} else {
+		len = str2.length();
+		
+        String vv = "";
+		
+		for(int i = 0; i < str2.length() - str1.length(); i++) {
+			vv += "0";
+		}
+		
+		vv += str1;
+		
+		str1 = vv;
+	}
+	
+	System.out.println(str1 + "  " + str2);
+	
+	for(int i = 0; i < len; i ++) {
+		
+		String s1 = "", s2 = "";
+		
+		s1 += str1.charAt(i);
+		s2 += str2.charAt(i);
+		
+		res += String.valueOf(Integer.valueOf(s1) + Integer.valueOf(s2));
+	}
+	
+	return res;
+}
+/*public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+
+	System.out.println("Enter number 1: ");
+
+	String str1 = sc.nextLine();
+	
+	System.out.println("Enter number 2: ");
+
+	String str2 = sc.nextLine();
+
+	System.out.println("Result is: " + task9(str1, str2));
+}
+*/
+
+
+//TASK10
+public static String task10(String str1) {
+	/*String str = str1;
+	String result = new StringBuilder(str).reverse().toString();
+	result = result.replaceAll("(.)(?=.*\\1)", "");
+	result = new StringBuilder(result).reverse().toString();
+	//System.out.println(result);
+	return result;*/
+	
+	String ss = "";
+
+	for(int i = 0; i < str1.length(); i++) {
+		String s = "";
+		s += str1.charAt(i);
+		if(!ss.contains(s)) {
+			ss += s;
+			} 
+	}
+	
+	return ss;
+}
+public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+
+	System.out.println("Enter string: ");
+
+	String str1 = sc.nextLine();
+	
+	System.out.println("Result is: " + task10(str1));
+}
 }
