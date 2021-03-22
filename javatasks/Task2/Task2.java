@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import javafx.application.Application;
+//import javafx.application.Application;
 public class Task2{
 
 //task1
